@@ -1,8 +1,8 @@
 const socket = io();
 const editor = document.getElementById('editor');
 const themeToggle = document.getElementById('themeToggle');
-const generateBtn = document.getElementById('generateBtn');
-const generatedLink = document.getElementById('generatedLink');
+//const generateBtn = document.getElementById('generateBtn');
+//const generatedLink = document.getElementById('generatedLink');
 
 // Handle theme switching based on saved state in localStorage
 const currentTheme = localStorage.getItem('theme') || 'light';
@@ -35,9 +35,9 @@ socket.on('text-update', (data) => {
   editor.value = data;
 });
 
-// Generate link logic
+/* // Generate link logic
 generateBtn.addEventListener('click', () => {
   const code = Math.random().toString(36).substring(2, 8);
   generatedLink.innerText = `Share this code: ${code}`;
   generatedLink.classList.remove('hidden');
-});
+}); */
