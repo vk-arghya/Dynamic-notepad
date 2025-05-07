@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Notepad</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body class="light"> <!-- Default theme is light -->
+
+  <header>
+    <h1>Real-Time Notepad</h1>
+    <div class="controls">
+      <button id="generateBtn">Generate Link</button>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <textarea id="editor" placeholder="Start typing..."></textarea>
+    <div id="generatedLink" class="hidden"></div>
+  </main>
+
+  <footer>
+    Created by Arghya
+  </footer>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
